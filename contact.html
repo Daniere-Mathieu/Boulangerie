@@ -1,16 +1,12 @@
-<!DOCTYPE html5>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boulangerie</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Boulangerie</title>
   </head>
   <body>
     <header class="header">
@@ -21,14 +17,6 @@
           class="logo"
         />
       </a>
-      <div class="header__burger__button">
-        <input type="checkbox" name="" id="burger" class="burger" />
-        <div class="header__three__line">
-          <span class="lines line1"></span>
-          <span class="lines line2"></span>
-          <span class="lines line3"></span>
-        </div>
-      </div>
       <div class="header__burger">
         <a href="/index.html">Nos produits</a>
         <a href="/index.html">Petit-déjeuner</a>
@@ -38,58 +26,54 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__slideshow">
-        <div class="main__slideshow__wrapper">
-          <a href="/index.html" class="main__slideshow__link">
-            <img
-              class="main__slideshow__slide"
-              src="./assets/imagePromo1.jpg"
-              alt="Image promotionnel de la boulangerie"
+      <form action="">
+        <div class="contact-form">
+          <h1>Send us a message</h1>
+          <div class="name">
+            <label for="name">Your name:*</label>
+            <input type="text" placeholder="first name" required id="name" />
+            <label for="surname">last name:*</label>
+            <input type="text" placeholder="last name" required id="surname" />
+          </div>
+          <div class="email">
+            <label for="email">youe email:*</label>
+            <input type="email" placeholder="your email" required id="email" />
+          </div>
+          <div class="phone">
+            <label for="country-code">Country code:*</label>
+            <input
+              type="tel"
+              placeholder="country code"
+              required
+              id="country-code"
             />
-          </a>
-          <a href="/index.html" class="main__slideshow__link">
-            <img
-              class="main__slideshow__slide"
-              src="./assets/imagePromo1.jpg"
-              alt="Image promotionnel de la boulangerie"
+            <label for="phone-number"> Phone Number:*</label>
+            <input
+              type="tel"
+              placeholder="phone number"
+              required
+              id="phone-number"
             />
-          </a>
-          <a href="/index.html" class="main__slideshow__link">
-            <img
-              class="main__slideshow__slide"
-              src="./assets/imagePromo1.jpg"
-              alt="Image promotionnel de la boulangerie"
+          </div>
+          <div class="subject">
+            <label for="subject">Message Subject:*</label>
+            <input
+              type="text"
+              placeholder="message subject"
+              required
+              id="subject"
             />
-          </a>
+          </div>
+          <div class="message">
+            <label for="message">Your Message:*</label>
+            <textarea placeholder=" your message" required id="message">
+            </textarea>
+          </div>
+          <button type="submit">Send</button>
         </div>
-      </section>
-      <section class="main__content">
-        <div class="main__content__item">
-          <img
-            src="./assets/long-pain-de-pain-22826883.jpg"
-            class="main__content__image"
-            alt="Photo de pain"
-          />
-          <h2 class="main__content__data">Pains</h2>
-        </div>
-        <div class="main__content__item">
-          <img
-            src="./assets/viennoiserie-pain-au-chocolat-croissant-pain-aux-raisins-scaled.jpeg"
-            class="main__content__image"
-            alt="Photo de Viennoiseries"
-          />
-          <h2 class="main__content__data">Viennoiseries</h2>
-        </div>
-        <div class="main__content__item">
-          <img
-            src="./assets/sandwich-roti-boeuf.jpg"
-            class="main__content__image"
-            alt="Photo de Sandwichs"
-          />
-          <h2 class="main__content__data">Sandwichs</h2>
-        </div>
-      </section>
+      </form>
     </main>
+
     <footer class="footer">
       <a href="https://instagram.com">
         <svg
@@ -123,10 +107,10 @@
           <g>
             <path
               d="M27.56,0.684H2.383C1.065,0.684,0,1.748,0,3.064v23.813c0,1.312,1.065,2.379,2.383,2.379H27.56
-		c1.312,0,2.38-1.066,2.38-2.379V3.064C29.939,1.748,28.871,0.684,27.56,0.684z M20.125,9.167c-0.619-0.362-1.11-0.648-1.727-0.648
-		c-0.604,0-1.12,0.151-1.384,0.405c-0.264,0.252-0.395,0.74-0.395,1.461v1.067h3.229l-0.699,2.968h-2.53v9.862h-4.056V14.42H10.67
-		v-2.968h1.895v-1.133c0-1.193,0.143-1.907,0.425-2.496c0.281-0.587,0.826-1.241,1.584-1.611c0.757-0.369,1.877-0.555,3.036-0.555
-		c1.188,0,2.116,0.396,3.254,0.715L20.125,9.167z"
+          c1.312,0,2.38-1.066,2.38-2.379V3.064C29.939,1.748,28.871,0.684,27.56,0.684z M20.125,9.167c-0.619-0.362-1.11-0.648-1.727-0.648
+          c-0.604,0-1.12,0.151-1.384,0.405c-0.264,0.252-0.395,0.74-0.395,1.461v1.067h3.229l-0.699,2.968h-2.53v9.862h-4.056V14.42H10.67
+          v-2.968h1.895v-1.133c0-1.193,0.143-1.907,0.425-2.496c0.281-0.587,0.826-1.241,1.584-1.611c0.757-0.369,1.877-0.555,3.036-0.555
+          c1.188,0,2.116,0.396,3.254,0.715L20.125,9.167z"
             />
             <g></g>
             <g></g>
@@ -196,21 +180,21 @@
           <g>
             <path
               d="M182.442,0H34.53C15.49,0,0,15.491,0,34.531v147.913c0,19.04,15.49,34.53,34.53,34.53h147.912
-		c19.041,0,34.532-15.49,34.532-34.53V34.531C216.975,15.491,201.483,0,182.442,0z M135.731,48.122
-		C135.731,29.858,150.59,15,168.852,15c18.264,0,33.122,14.858,33.122,33.122c0,12.021-18.405,41.336-33.122,61.603
-		C154.137,89.458,135.731,60.143,135.731,48.122z M15,34.531C15,23.762,23.761,15,34.53,15h99.463
-		c-8.208,8.635-13.262,20.296-13.262,33.122c0,7.455,3.886,17.633,9.306,28.209l-26.846,26.846
-		c-0.003,0.002-0.005,0.004-0.008,0.007c-0.003,0.003-0.005,0.005-0.007,0.008l-86.695,86.695c-0.95-2.296-1.481-4.808-1.481-7.442
-		V34.531z M34.53,201.975c-2.635,0-5.146-0.531-7.442-1.481l81.399-81.398l81.398,81.398c-2.296,0.95-4.808,1.481-7.443,1.481H34.53
-		z M201.975,182.444c0,2.635-0.531,5.146-1.481,7.442l-81.398-81.399l18.555-18.554c10.69,17.785,22.918,33.86,25.262,36.903
-		c1.42,1.843,3.614,2.923,5.941,2.923c2.327,0,4.521-1.08,5.941-2.923c2.485-3.227,16.085-21.106,27.181-40.141V182.444z"
+          c19.041,0,34.532-15.49,34.532-34.53V34.531C216.975,15.491,201.483,0,182.442,0z M135.731,48.122
+          C135.731,29.858,150.59,15,168.852,15c18.264,0,33.122,14.858,33.122,33.122c0,12.021-18.405,41.336-33.122,61.603
+          C154.137,89.458,135.731,60.143,135.731,48.122z M15,34.531C15,23.762,23.761,15,34.53,15h99.463
+          c-8.208,8.635-13.262,20.296-13.262,33.122c0,7.455,3.886,17.633,9.306,28.209l-26.846,26.846
+          c-0.003,0.002-0.005,0.004-0.008,0.007c-0.003,0.003-0.005,0.005-0.007,0.008l-86.695,86.695c-0.95-2.296-1.481-4.808-1.481-7.442
+          V34.531z M34.53,201.975c-2.635,0-5.146-0.531-7.442-1.481l81.399-81.398l81.398,81.398c-2.296,0.95-4.808,1.481-7.443,1.481H34.53
+          z M201.975,182.444c0,2.635-0.531,5.146-1.481,7.442l-81.398-81.399l18.555-18.554c10.69,17.785,22.918,33.86,25.262,36.903
+          c1.42,1.843,3.614,2.923,5.941,2.923c2.327,0,4.521-1.08,5.941-2.923c2.485-3.227,16.085-21.106,27.181-40.141V182.444z"
             />
             <path
               d="M63.964,98.25c20.009,0,36.287-16.278,36.287-36.287c0-4.142-3.357-7.5-7.5-7.5H63.964c-4.143,0-7.5,3.358-7.5,7.5
-		c0,4.142,3.357,7.5,7.5,7.5h19.923C80.848,77.511,73.063,83.25,63.964,83.25c-11.737,0-21.286-9.549-21.286-21.287
-		c0-11.737,9.549-21.286,21.286-21.286c5.684,0,11.03,2.214,15.052,6.234c2.93,2.928,7.678,2.928,10.607-0.002
-		c2.928-2.929,2.927-7.678-0.002-10.606c-6.854-6.852-15.967-10.625-25.657-10.625c-20.008,0-36.286,16.278-36.286,36.286
-		C27.678,81.972,43.956,98.25,63.964,98.25z"
+          c0,4.142,3.357,7.5,7.5,7.5h19.923C80.848,77.511,73.063,83.25,63.964,83.25c-11.737,0-21.286-9.549-21.286-21.287
+          c0-11.737,9.549-21.286,21.286-21.286c5.684,0,11.03,2.214,15.052,6.234c2.93,2.928,7.678,2.928,10.607-0.002
+          c2.928-2.929,2.927-7.678-0.002-10.606c-6.854-6.852-15.967-10.625-25.657-10.625c-20.008,0-36.286,16.278-36.286,36.286
+          C27.678,81.972,43.956,98.25,63.964,98.25z"
             />
           </g>
           <g></g>

@@ -1,0 +1,127 @@
+
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #D2DFEA;
+    align-items: center;
+    color: #4F4F4F;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+
+}
+.email{
+    display: flex;
+    flex-direction: row;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+.subject{
+    display: flex;
+    flex-direction: row;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+}
+label{
+    padding-right: 25px;
+    white-space: nowrap;
+    padding-top: 10px
+}
+
+.contact-form div{
+    padding-top: 50px;
+    width: 50%;
+    
+}
+
+.name input{
+    margin-right: 20px;
+    width: 200px;
+    height: 35px;
+}
+
+.phone input{
+    margin-right: 20px;
+    width: 200px;
+    height: 35px;
+}
+
+.email input{
+    width: 400px;
+    height: 35px;
+}
+
+.subject input{
+    width: 400px;
+    height: 35px;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;  
+}
+
+button{
+   background-color: #001847;
+   color: #FFFFFF;
+   width: 100px;
+   height: 50px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   border-radius: 20px;
+}
+
+button:hover{
+   color:#959596 ;
+}
+h1{
+    color: #001847;
+}
+input{
+    border-radius: 20px;
+    
+    
+}
+
+input::placeholder
+{   
+    text-align: center;
+}
+
+/* input:valid {
+ border-color: green;
+  } */
+
+
+ @media (max-width: 767px) {
+    
+input{
+    width: 100px !important;
+    height: 50px !important;
+}
+.contact-form{
+    align-items:baseline;
+}
+
+.message input{
+    width: 200px !important;
+
+}
+
+
+.contact-form div{
+    padding-top: 10px;
+}
+
+.contact-form{
+    
+}
+}
